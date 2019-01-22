@@ -1,0 +1,29 @@
+cxx_binary(
+  name = '4channels',
+  srcs = [
+    '4channels.cpp',
+  ],
+  deps = [
+    '//:raw',
+  ],
+)
+
+cxx_binary(
+  name = 'mem-image',
+  srcs = [
+    'mem_image.cpp',
+  ],
+  deps = [
+    '//:raw',
+  ],
+)
+
+cxx_binary(
+  name = 'simple-dcraw',
+  srcs = [
+    'simple_dcraw.cpp',
+  ],
+  deps = [
+    '//:raw',
+  ],
+)
